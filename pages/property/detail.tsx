@@ -1,5 +1,11 @@
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import { Container } from "@mui/material";
+import { green } from "@mui/material/colors";
+
 const PropertyDetail = () => {
-    return <div>Property Detail</div>
+    return <>
+         <Container sx={{background: green}}>Property Detail</Container>
+    </>
 }
 
-export default PropertyDetail;
+export default withLayoutBasic(PropertyDetail);
